@@ -1,4 +1,4 @@
-// 1 - movendo-se no DOM
+// 1 - movendo-se pelo DOM
 console.log(document.body);
 
 console.log(document.body.childNodes);
@@ -14,17 +14,17 @@ const listItens = document.getElementsByTagName("li");
 
 console.log(listItens);
 
-// 3 - selecionando elemento por id
+// 3 - selecionando o elemento por ID
 const title = document.getElementById("title");
 
 console.log(title);
 
-// 4 - selecionando elementos por classe
+// 4 - selcionando o elemento pela classe
 const products = document.getElementsByClassName("product");
 
 console.log(products);
 
-// 5 - selecionando os elementos por CSS
+// 5 - selecionando os elementos por CSS"
 const productsQuery = document.querySelectorAll(".product");
 
 console.log(products);
@@ -41,11 +41,11 @@ const header = title.parentElement;
 header.insertBefore(p, title);
 
 // 7 - appendChild
-const navLinks = document.querySelector("nav ul");
+// const navLinks = document.querySelector("nav ul");
 
-const li = document.createElement("li");
+// const li = document.createElement("li");
 
-navLinks.appendChild(li);
+// navLinks.appendChild(li);
 
 // 8 - replaceChild
 const h2 = document.createElement("h2");
@@ -62,41 +62,44 @@ const h3 = document.createElement("h3");
 h3.appendChild(myText);
 
 mainContainer.appendChild(h3);
+// EXEMPLO
+const myTexttwo = document.createTextNode("Mais um texto");
+
+const h4 = document.createElement("h4");
+
+h4.appendChild(myTexttwo);
+
+mainContainer.appendChild(h4);
 
 // 10 - trabalhando com atributos
-const firstLink = navLinks.querySelector("a");
+const navLinks = document.querySelector("nav ul");
+
+const firstLink = document.querySelector("a");
 
 console.log(firstLink);
 
-firstLink.setAttribute("href", "https://horadecodar.com.br");
-
-console.log(firstLink.getAttribute("href"));
-
-firstLink.setAttribute("target", "_blank");
+firstLink.setAttribute("href", "https://www.google.com");
 
 // 11 - altura e largura
 const footer = document.querySelector("footer");
 
 console.log(footer.offsetWidth);
-
 console.log(footer.offsetHeight);
 
 console.log(footer.clientWidth);
-
 console.log(footer.clientHeight);
 
-// 12 - posicao do elemento
+// 12 - posicao do elemwnto
 const product1 = products[0];
 
 console.log(product1.getBoundingClientRect());
 
 // 13 - CSS com JS
-
 mainContainer.style.color = "red";
 mainContainer.style.backgroundColor = "#333";
 mainContainer.style.paddingBottom = "15px";
 
-// 14 - Alterando estilos de varios elementoss
+// 14 - alterando os estilos de varios elementos
 for (const li of listItens) {
-  li.style.backgroundColor = "red";
-}
+  li.style.backgroundColor = "#698";
+};
