@@ -11,6 +11,22 @@ const idade = 39;
 
 console.log(idade);
 
+// const nome2 = "Gabriel";
+
+// console.log(nome2);
+
+// nome2 = "Victor Gabriel"
+
+// console.log(nome2)
+
+let idade2 = "29";
+
+console.log(idade2)
+
+idade2 = "35 anos";
+
+console.log(idade2);
+
 // idade = 32;
 
 console.log(typeof nome);
@@ -38,7 +54,7 @@ console.log(nomecompleto, nomeCompleto);
 let _teste = "válido";
 
 let $teste = "válido";
-
+ 
 console.log(_teste, $teste);
 
 // 3 - Prompt
@@ -100,7 +116,7 @@ if (loggedIn) {
 }
 
 const q = 10;
-const w = 15;
+const w = 5;
 
 if (q > 5 && w > 20) {
   console.log("Números mais altos!");
